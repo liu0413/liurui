@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class destroy_self : MonoBehaviour
 {
+    private int alive = 1;
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -16,14 +16,16 @@ public class destroy_self : MonoBehaviour
         float xPosition = transform.position.x;
         float yPosition = transform.position.y;
         float zPosition = transform.position.z;
-        Debug.Log("x"+xPosition);
-        Debug.Log("y"+yPosition);
-
-        Debug.Log("z"+zPosition);
 
         if (yPosition < 0)
         {
             Destroy(gameObject, 2.0f);
+            if (alive == 1) 
+            {
+                NumberDisplay numberDisplay = FindObjectOfType<NumberDisplay>();
+                numberDisplay.IncreaseNumber();
+                alive = 0;
+            }
         }
         
     }
