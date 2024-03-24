@@ -23,9 +23,9 @@ public class play_game : MonoBehaviour
         // 在这里添加您想要执行的操作
         GameObject game_object = Instantiate(objectToSpawn, transform.position, transform.rotation);
         game_object.SetActive(true);
-        game_object.transform.SetParent(parentTransform);
         game_object.transform.position = new Vector3(0, 3.325f, 2.561f);
         game_object.transform.rotation = Quaternion.Euler(90, 0, 0);
         game_object.transform.localScale = new Vector3(0.3f, 0.03f, 0.3f);
+        game_object.transform.SetParent(parentTransform, true);
     }
 }

@@ -5,6 +5,10 @@ using UnityEngine;
 public class destroy_self : MonoBehaviour
 {
     private int alive = 1;
+    private int onboard = 1;
+    public Transform onBoardparentTransform;
+    public Transform offBoardparentTransform;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +20,7 @@ public class destroy_self : MonoBehaviour
         float xPosition = transform.position.x;
         float yPosition = transform.position.y;
         float zPosition = transform.position.z;
+        float zLocalPosition = transform.localPosition.z;
 
         if (yPosition < 0)
         {
@@ -24,10 +29,14 @@ public class destroy_self : MonoBehaviour
             {
                 NumberDisplay numberDisplay = FindObjectOfType<NumberDisplay>();
                 alive = 0;
-                if (xPosition >= 2 || xPosition <= -2 ) {
+                if (xPosition <= 2 || xPosition >= -2 ) {
                     numberDisplay.IncreaseNumber();
                 }
             }
+        }
+        if ( zLocalPosition < -0.5 && onboard == 1){
+            onboard = 0;
+            gameObject.transform.SetParent(offBoardparentTransform);
         }
         
     }
