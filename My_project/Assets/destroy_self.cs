@@ -23,8 +23,10 @@ public class destroy_self : MonoBehaviour
             if (alive == 1) 
             {
                 NumberDisplay numberDisplay = FindObjectOfType<NumberDisplay>();
-                numberDisplay.IncreaseNumber();
                 alive = 0;
+                if (xPosition >= 2 || xPosition <= -2 ) {
+                    numberDisplay.IncreaseNumber();
+                }
             }
         }
         
