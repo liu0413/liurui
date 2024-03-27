@@ -1,0 +1,4 @@
+#Thu Mar 28 01:25:42 CST 2024
+base.0=/Users/liurui/my_first_project/My_project/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/intermediates/dex/release/mergeDexRelease/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

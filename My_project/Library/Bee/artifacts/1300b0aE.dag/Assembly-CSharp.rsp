@@ -355,7 +355,6 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/destroy_self.cs"
-"Assets/ModularFirstPersonController/FirstPersonController/FirstPersonController.cs"
 "Assets/move.cs"
 "Assets/NumberDisplay.cs"
 "Assets/play_game.cs"
