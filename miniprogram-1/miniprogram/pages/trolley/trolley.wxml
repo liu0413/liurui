@@ -1,0 +1,23 @@
+<view class="container">
+  <swiper class="swiper" indicator-dots="{{false}}" autoplay="{{true}}" interval="{{5000}}" circular="{{true}}">
+    <swiper-item wx:for="{{swiperList}}" wx:key="index">
+      <image class="swiper-item" mode="aspectFill" src="{{item}}"></image>
+    </swiper-item>
+  </swiper>
+  <view class="content">
+    <scroll-view class="menu" scroll-y bindscroll="scrollMenu">
+      <view class="menu-item {{index === current ? 'active' : ''}}" wx:for="{{menuList}}" wx:key="id" wx:for-item="item" wx:for-index="index"
+        data-index="{{index}}" bindtap="scrollToProduct">
+        {{item.name}}
+      </view>
+    </scroll-view>
+    <scroll-view class="product" scroll-y bindscroll="scrollProduct">
+      <view class="product-item {{index === current ? 'active' : ''}}" wx:for="{{productList}}" wx:key="id" wx:for-item="item" wx:for-index="index"
+        data-index="{{index}}">
+        <image class="product-image" mode="aspectFill" src="{{item.image}}"></image>
+        <view class="product-name">{{item.name}}</view>
+        <view class="product-price">{{item.price}}</view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
