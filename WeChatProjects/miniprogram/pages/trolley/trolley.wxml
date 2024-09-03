@@ -1,9 +1,10 @@
 <view class="container">
-  <!-- <swiper class="swiper" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" circular="{{true}}">
+  <swiper class="swiper" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" circular="{{true}}">
     <swiper-item wx:for="{{swiperList}}" wx:key="index">
       <image class="swiper-item" mode="aspectFill" src="{{item}}"></image>
     </swiper-item>
-  </swiper> -->
+  </swiper>
+  <text>dqwe</text>
   <scroll-view class='scroll_left' scroll-y="true" style="height:{{winHeight}}px;" scroll-with-animation="true" scroll-top="{{scrollTop}}">
 
     <view class="nav_left">
