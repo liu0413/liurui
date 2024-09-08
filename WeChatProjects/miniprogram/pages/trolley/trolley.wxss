@@ -4,16 +4,6 @@
     height: 100vh;
   } */
   
-  .swiper {
-    width: 100%;
-    height: 250rpx;
-  }
-  
-  .swiper-item {
-    width: 100%;
-    height: 100%;
-  }
-  
   /*总体主盒子*/
 
   .container { 
@@ -30,6 +20,16 @@
 
   } 
 
+  .swiper {
+    width: 100%;
+    height: 250rpx;
+  }
+  
+  .swiper-item {
+    width: 100%;
+    height: 100%;
+  }
+
   /*左侧栏主盒子*/ 
 
   .nav_left{ 
@@ -38,9 +38,9 @@
 
     display: inline-block; 
 
-    width: 100%; 
+    width: 25%; 
 
-    height: calc(100vh - 250rpx); 
+    height: calc(100vh - 200rpx); 
 
     /*主盒子设置背景色为灰色*/ 
 
@@ -48,11 +48,11 @@
 
     text-align: center; 
 
-    /* position: fixed;  */
+    position: fixed;
 
     left: 0;
 
-    top: 0;
+    top: 250rpx;
 
     border-top: 1rpx solid #dedede;
 
@@ -110,7 +110,7 @@
 
     position: fixed;
 
-    top: 250rpx;
+    top: 0rpx;
 
     right: 0;
 
@@ -130,7 +130,7 @@
 
     background-color: #f0f4f7;
 
-    border-top: 1rpx solid #dedede;
+    border-top: 0rpx solid #dedede;
 
   }
 

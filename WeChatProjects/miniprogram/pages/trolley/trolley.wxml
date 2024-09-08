@@ -4,7 +4,6 @@
       <image class="swiper-item" mode="aspectFill" src="{{item}}"></image>
     </swiper-item>
   </swiper>
-  <text>dqwe</text>
   <scroll-view class='scroll_left' scroll-y="true" style="height:{{winHeight}}px;" scroll-with-animation="true" scroll-top="{{scrollTop}}">
 
     <view class="nav_left">

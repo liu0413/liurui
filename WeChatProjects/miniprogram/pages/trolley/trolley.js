@@ -224,7 +224,7 @@ Page({
 
                               that.setData({
 
-                                      winHeight: res.windowHeight,
+                                      winHeight: res.windowHeight - 50,
 
                                       right_titleHeight: Number(right_titleRpxHeight * percent),
 
